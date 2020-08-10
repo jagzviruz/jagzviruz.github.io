@@ -1,0 +1,24 @@
+.glyph{
+    align-items: center;
+    display: inline-flex;
+    padding: 0.15rem .5rem;
+    margin: 0 0.75rem 0 0;
+    background-color: var(--primary-color);
+    color: var(--text-on-primary);
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.logo-text{
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.logo {
+  display: inline-flex;
+  font-family: 'Montserrat',sans-serif;
+}

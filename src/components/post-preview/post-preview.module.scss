@@ -1,0 +1,56 @@
+.article{
+  padding: 0.8em 0 1.2em;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  h3{
+    margin-top: 0.3rem;
+  }
+
+  time{
+    align-self: flex-end;
+    opacity: 0.6;
+    font-size: x-small;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .link{
+    text-decoration: none;
+
+    &:before{
+      content: ' ';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -0.8em;
+      bottom: 0;
+      border: 1px solid transparent;
+      transition: all 0.2s ease-in;
+    }
+
+    &:hover{
+      &:before{
+        background-color: #ececec;
+        opacity: 0.3;
+        border: 1px solid #eee;
+        margin-left: -1em;
+        margin-right: -1em;
+        border-bottom: 1px solid #ececec;
+      }
+    }
+  }
+
+  .pill{
+    display: inline-block;
+    padding: 0.25em;
+
+  }
+
+
+  aside{
+
+  }
+}

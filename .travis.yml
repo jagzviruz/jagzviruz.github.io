@@ -1,0 +1,15 @@
+language: node_js
+before_script:
+  - npm install
+script:
+- npm run build
+deploy:
+  provider: pages:git
+  token: $GITHUB_TOKEN
+  edge: true
+  verbose: true
+  cleanup: false
+  keep_history: false
+  local_dir: ./public
+  on:
+    branch: master
