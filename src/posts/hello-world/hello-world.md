@@ -1,68 +1,16 @@
 ---
-title: A hello world frontmatter
+title: A New beginning
 slug: /hello-world
-date: '2020-08-08'
-spoiler: This is the spoiler text shown on the list page
-tags: ['hello-world', 'sample']
-keywords: ['hello world', 'sample', 'markdown']
+date: '2020-08-11'
+spoiler: Its that time of the year when I try to blog again
+tags: ['hello-world', 'first-post']
+keywords: ['']
 ---
-## Hello World
 
+It has been some time since I have blogged, and lately I have started itching
+to start penning my notes again.
+All my previous attempts have been to work with a full fledged CMS like Wordpress, which is just overkill for what I need. All I need is a place to note my observations while musing over stuff I do everyday.
 
-This is a blog built with Gatsby where posts are written in `MarkDown`.
+So how is this "time" to be different? I cannot promise anything. All I can say, is I have done away with all the shiny tools that would distract me. So hopefully, I will be able to concentrate better on my subject matter.
 
-You can colocate images in the same folder and use it as
-![Hello on a smiley card](./hello.jpg "Logo Title Text 1")
-
-
-
-## Code highlighting using PrismJS
-
-
-PrismJS supports highligting [226 languages](https://prismjs.com/#supported-languages).
-
-
-Wrap your code snippet in triple back-ticks and add your language name.
-
-````md
-```cpp
-// Your First C++ Program
-
-#include <iostream>
-
-int main() {
-    std::cout << "Hello World!";
-    return 0;
-}
-```
-````
-
-
-#### C++
-```cpp
-// Your First C++ Program
-
-#include <iostream>
-
-int main() {
-    std::cout << "Hello World!";
-    return 0;
-}
-```
-
-
-#### HTML
-````md
-```html
-<h3>
-  Hello World
-</h3>
-```
-````
-```html
-<h3>
-  Hello World
-</h3>
-```
-
-
+This will be a place where I share my snippets, learning and tricks of my trade. If everything goes good, then this will be an invaluable repository for my personal use, and hopefully for others who come across it in due course of time.

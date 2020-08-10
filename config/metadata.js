@@ -1,17 +1,19 @@
-const NAME = "Developer Name"
-const SITE_NAME = "Developer Name"
-const DESCRIPTION = "A description" // Alternative Site title for SEO
+const NAME = "Jagadish, K."
+const SITE_NAME = "Jagadish, K."
+const DESCRIPTION = "Musings of an old Javascript developer named Jagadish, K." // Alternative Site title for SEO
 const MINI_BIO = `
-<strong>${NAME}</strong> is a developer and this is a short bio.
+<strong>Jagadish, K.</strong> is a Software engineer and has been working on websites since 2008.
+He enjoys building web-applications and playing with the various shiny tools in the world of Javascript.
+He likes to document his learnings so they can show the way for others as well as serve as a reminder for himself.
 `
-const SHORT_NAME = "developername" // short_name for manifest
+const SHORT_NAME = "jagadishk" // short_name for manifest
 const SITE_URL = "http://localhost:8000/" // Domain of your site. No trailing slash!
-const ORG = "Org Name"
+const ORG = "LinkedIn"
 
-const TWITTER = "twitter"
-const GITHUB = "github"
-const LINKED_IN_SHORTNAME = "linkedin"
-const EMAIL = "username@email"
+const TWITTER = "jagzviruz"
+const GITHUB = "jagzviruz"
+const LINKED_IN_SHORTNAME = "kjagdish"
+const EMAIL = "k.jagdish+website@gmail.com"
 
 const GOOGLE_ANALYTICS_TRACKING_ID = ""
 
