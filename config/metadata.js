@@ -15,7 +15,7 @@ const GITHUB = "jagzviruz"
 const LINKED_IN_SHORTNAME = "kjagdish"
 const EMAIL = "k.jagdish+website@gmail.com"
 
-const GOOGLE_ANALYTICS_TRACKING_ID = "G-JN80N6GQ2F"
+const GOOGLE_ANALYTICS_TRACKING_ID = "UA-175186452-1"
 
 module.exports = {
   title: NAME,
