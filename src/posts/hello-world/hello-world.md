@@ -1,7 +1,7 @@
 ---
 title: A New beginning
 slug: /hello-world
-date: '2020-08-11'
+date: '2020-08-11T00:00'
 spoiler: Its that time of the year when I try to blog again
 tags: ['hello-world', 'first-post']
 keywords: ['']

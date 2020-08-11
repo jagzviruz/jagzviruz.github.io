@@ -1,7 +1,7 @@
 ---
 title: Median of two sorted arrays
 slug: /median-of-two-sorted-arrays
-date: '2020-08-11'
+date: '2020-08-11T22:30'
 spoiler: Given two sorted arrays, find the median.
 tags: ['javascript', 'leetcode','interview']
 keywords: ['javascript', 'binary search', 'divide and conquer' ]
