@@ -7,7 +7,7 @@ He enjoys building web-applications and playing with the various shiny tools in 
 He likes to document his learnings so they can show the way for others as well as serve as a reminder for himself.
 `
 const SHORT_NAME = "jagadishk" // short_name for manifest
-const SITE_URL = "http://localhost:8000/" // Domain of your site. No trailing slash!
+const SITE_URL = "https://jagadishk.dev" // Domain of your site. No trailing slash!
 const ORG = "LinkedIn"
 
 const TWITTER = "jagzviruz"
