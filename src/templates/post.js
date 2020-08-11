@@ -12,7 +12,7 @@ export default ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { title, tags = [], spoiler, date, keywords = [] } = post.frontmatter
   const { previous, next } = pageContext
-  console.log(keywords.filter( a => a.trim()))
+
   return (
     <BaseLayout>
       <SEO
