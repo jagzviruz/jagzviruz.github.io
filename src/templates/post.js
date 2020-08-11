@@ -12,13 +12,13 @@ export default ({ data, pageContext }) => {
   const post = data.markdownRemark
   const { title, tags = [], spoiler, date, keywords = [] } = post.frontmatter
   const { previous, next } = pageContext
-
+  console.log(keywords.filter( a => a.trim()))
   return (
     <BaseLayout>
       <SEO
         title={title}
         description={spoiler}
-        keywords={keywords && keywords.join(",")}
+        keywords={keywords && keywords.filter( a => a.trim()) }
       />
       <aside>
         <span className={postStyles.timeBlock}>
@@ -44,16 +44,16 @@ export default ({ data, pageContext }) => {
               : null}
           </ul>
         ) : null}
-        {keywords && keywords.length > 0 ? (
+        {keywords && keywords.filter( a => a.trim()).length > 0 ? (
           <ul className="horizontal-list my-3">
             <li className="bold">Keywords : </li>
-            {keywords && keywords.length > 0
-              ? keywords.map(keyword => (
-                  <li key={keyword} className="pill">
-                    {keyword}
-                  </li>
-                ))
-              : null}
+            {
+              keywords.map(keyword => (
+                <li key={keyword} className="pill">
+                  {keyword}
+                </li>
+              ))
+            }
           </ul>
         ) : null}
         <ul
