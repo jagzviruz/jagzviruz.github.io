@@ -1,11 +1,13 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import parseISO from 'date-fns/parseISO'
+import format from 'date-fns/format'
 
 import previewStyles from "./post-preview.module.scss"
 
 const PostPreview = ({ title, slug, spoiler, date, tags }) => (
   <article className={previewStyles.article}>
-    <time>{date}</time>
+    <time dateTime={date}>{format(parseISO(date),'MMM dd, yyyy')}</time>
     <h3 article="heading">{title}</h3>
     <aside>
       {tags && tags.length > 0

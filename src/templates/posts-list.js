@@ -51,7 +51,7 @@ const AllPosts = ({ data, pageContext }) => {
 }
 
 export const query = graphql`
-  query blogPosts($skip: Int!, $limit: Int!) {
+  query blogPosts($skip: Int!, $limit: Int!, $currentDate: Date!) {
     site {
       siteMetadata {
         title
@@ -61,6 +61,7 @@ export const query = graphql`
       sort: { fields: frontmatter___date, order: DESC }
       limit: $limit
       skip: $skip
+      filter: {frontmatter: {date: {lte: $currentDate}}}
     ) {
       edges {
         node {
@@ -68,7 +69,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
-            date(fromNow: true)
+            date
             spoiler
             tags
             title

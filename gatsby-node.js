@@ -1,6 +1,6 @@
 const path = require(`path`)
 const { postsPerPage } = require(`./config/settings`)
-
+const formatISO = require( 'date-fns/formatISO');
 exports.onCreateNode = ({ node, actions }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const slug = node.frontmatter.slug
@@ -69,6 +69,7 @@ exports.createPages = async ({ graphql, actions }) => {
         limit: postsPerPage,
         numPages,
         currentPage: i + 1,
+        currentDate: formatISO(new Date(), 'yyyy-mm-ddThh:mm')
       },
     })
   })

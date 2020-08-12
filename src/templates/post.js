@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import parseISO from 'date-fns/parseISO'
+import format from 'date-fns/format'
 
 import { BaseLayout } from "../layout"
 import SEO from "../components/seo"
@@ -22,7 +24,7 @@ export default ({ data, pageContext }) => {
       />
       <aside>
         <span className={postStyles.timeBlock}>
-          Published on <time>{date}</time>
+          Published on <time dateTime={date}>{format(parseISO(date),'MMMM dd, yyyy')}</time>
         </span>
       </aside>
       <h1>{title}</h1>
@@ -91,7 +93,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date
         tags
         spoiler
         keywords

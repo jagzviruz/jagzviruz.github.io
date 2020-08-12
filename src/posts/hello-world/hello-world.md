@@ -1,5 +1,5 @@
 ---
-title: A New beginning
+title: A new beginning
 slug: /hello-world
 date: '2020-08-11T00:00'
 spoiler: Its that time of the year when I try to blog again
