@@ -1,6 +1,7 @@
 language: node_js
 before_script:
   - npm install
+  - export TZ=Asia/Dili
 script:
 - npm run build
 deploy:
