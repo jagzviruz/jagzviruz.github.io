@@ -66,6 +66,6 @@ function selectionSort(arr){
 
 ```
 
-The Selection sort technique runs in quadratic time in all cases and has **O(n<sup>2</sup>)** time complexity and constant space complexity of **O(1)** as it does not use any additional space. It makes at most **O(N)** swaps. So it is advatageous to use in cases where the array is almost sorted or where the swapping operation is not very expensive. It has far fewer swaps than insertion sort or [`bubble sort`]('/sorting/bubble-sort').
+The Selection sort technique runs in quadratic time in all cases and has **O(n<sup>2</sup>)** time complexity and constant space complexity of **O(1)** as it does not use any additional space. It makes at most **O(N)** swaps. So it is advatageous to use in cases where the array is almost sorted or where the swapping operation is not very expensive. It has far fewer swaps than insertion sort or [`bubble sort`](/sorting/bubble-sort).
 
 <iframe height="1400px" width="100%" src="https://repl.it/@jagzviruz/Selection-Sort?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
