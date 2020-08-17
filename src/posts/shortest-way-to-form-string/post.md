@@ -1,5 +1,5 @@
 ---
-title: Shortest Way to Form String
+title: Shortest way to form a string
 slug: /shortest-way-to-form-string
 date: '2020-08-17T20:28'
 spoiler: Check if a string was formed by using subsequences from another.
