@@ -12,8 +12,7 @@ const {
   github,
   linkedin,
   email,
-  googleAnalyticsTrackingId,
-  social9TrackingId
+  googleAnalyticsTrackingId
 } = require("./config/metadata")
 
 const domain = psl.parse(siteUrl).domain
@@ -74,14 +73,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-social9-socialshare`,
-      options: {
-        content:  social9TrackingId,
-        async:  true,
-        defer:  true
-      },
-    },
     {
       resolve: "gatsby-plugin-transition-link",
       options: {

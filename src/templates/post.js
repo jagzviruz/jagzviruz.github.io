@@ -1,8 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import parseISO from 'date-fns/parseISO'
-import format from 'date-fns/format'
+import parseISO from "date-fns/parseISO"
+import format from "date-fns/format"
 
 import { BaseLayout } from "../layout"
 import SEO from "../components/seo"
@@ -20,11 +20,12 @@ export default ({ data, pageContext }) => {
       <SEO
         title={title}
         description={spoiler}
-        keywords={keywords && keywords.filter( a => a.trim()) }
+        keywords={keywords && keywords.filter(a => a.trim())}
       />
       <aside>
         <span className={postStyles.timeBlock}>
-          Published on <time dateTime={date}>{format(parseISO(date),'MMMM dd, yyyy')}</time>
+          Published on{" "}
+          <time dateTime={date}>{format(parseISO(date), "MMMM dd, yyyy")}</time>
         </span>
       </aside>
       <h1>{title}</h1>
@@ -34,8 +35,27 @@ export default ({ data, pageContext }) => {
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
       <footer>
-        <p>If you think somebody would benefit from reading this post, please share away and help me reach more people.</p>
-        <div class="s9-widget-wrapper"></div>
+        <p>
+          If you think somebody would benefit from reading this post, please
+          share away and help me reach more people.
+        </p>
+        <div class="share-widgets">
+          <a
+            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+            class="twitter-share-button"
+            data-text={`Found this nifty post :${title}`}
+            data-via="jagzviruz"
+            data-lang="en"
+            data-show-count="false"
+          >
+            Tweet
+          </a>
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
       </footer>
       <footer>
         {tags.length > 0 ? (
@@ -50,16 +70,14 @@ export default ({ data, pageContext }) => {
               : null}
           </ul>
         ) : null}
-        {keywords && keywords.filter( a => a.trim()).length > 0 ? (
+        {keywords && keywords.filter(a => a.trim()).length > 0 ? (
           <ul className="horizontal-list my-3">
             <li className="bold">Keywords : </li>
-            {
-              keywords.map(keyword => (
-                <li key={keyword} className="pill">
-                  {keyword}
-                </li>
-              ))
-            }
+            {keywords.map(keyword => (
+              <li key={keyword} className="pill">
+                {keyword}
+              </li>
+            ))}
           </ul>
         ) : null}
         <ul
