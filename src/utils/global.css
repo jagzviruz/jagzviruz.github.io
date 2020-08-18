@@ -80,8 +80,8 @@ ul.pagination a.page-link {
 }
 
 
-.gatsby-resp-image-image{
+.gatsby-resp-image-wrapper{
   border: 15px solid #fff;
   border-radius: 3px;
-  box-shadow: 0 4px 5px #ececec;
+  box-shadow: 0 0px 10px #eee;
 }
