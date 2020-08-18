@@ -34,6 +34,10 @@ export default ({ data, pageContext }) => {
         dangerouslySetInnerHTML={{ __html: post.html }}
       />
       <footer>
+        <p>If you think somebody would benefit from reading this post, please share away and help me reach more people.</p>
+        <div class="s9-widget-wrapper"></div>
+      </footer>
+      <footer>
         {tags.length > 0 ? (
           <ul className="horizontal-list my-3">
             <li className="bold">Tags : </li>

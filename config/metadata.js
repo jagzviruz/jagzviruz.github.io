@@ -16,6 +16,7 @@ const LINKED_IN_SHORTNAME = "kjagdish"
 const EMAIL = "k.jagdish+website@gmail.com"
 
 const GOOGLE_ANALYTICS_TRACKING_ID = "UA-175186452-1"
+const SOCIAL9_TRACKING_ID = "33ebc40519b24849bb66978f320a4891"
 
 module.exports = {
   title: NAME,
@@ -50,4 +51,5 @@ module.exports = {
 
   // Tracking Related
   googleAnalyticsTrackingId: GOOGLE_ANALYTICS_TRACKING_ID,
+  social9TrackingId: SOCIAL9_TRACKING_ID,
 }
