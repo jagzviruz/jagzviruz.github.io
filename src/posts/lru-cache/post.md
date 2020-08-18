@@ -11,9 +11,9 @@ keywords: [implement lru, cache, least recently used, delete, object oriented ja
 
 A **L**east **R**ecently **U**sed cache is a technique used in computer applications to optimise *get* operations for frequently accessed data that could potentially involve heavy processing/computation.
 
-The store is initialised with a given capacity, and can store a maximum of that number of items. When a new item needs to be stored, the item that has been accessed the lowest number of times in the store will get *evicted*. This implies there needs to be a way to keep track of when the items were accessed. Due to this, the order of insertion is not relevant to the operations.
+The store is initialised with a given capacity, and can store a maximum of that number of items. When a new item needs to be stored, the item that has been accessed the lowest number of times in the store will get *evicted*. This implies there needs to be a way to keep track of when the items were accessed. Due to this, the order of insertion is not relevant to the operations if any *get* operation have been performed. If no get operations were performed, remove the earliest inserted item.
 
-All items stored in the LRU are indexed by keys and no two items can have the same keys.
+All items stored in the **Cache** are indexed by keys and no two items can have the same keys.
 
 ### How to implement ?
 
