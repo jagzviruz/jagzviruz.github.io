@@ -85,3 +85,9 @@ ul.pagination a.page-link {
   border-radius: 3px;
   box-shadow: 0 0px 10px #eee;
 }
+
+.gatsby-highlight{
+  box-shadow: 0 0 10px #666;
+  margin: 2rem -2rem 1.5rem;
+  transform: scale(1.02);
+}
