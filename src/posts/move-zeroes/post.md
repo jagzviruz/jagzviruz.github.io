@@ -8,16 +8,17 @@ keywords: [array manipulation, move zeroes]
 ---
 ### Question
 Given an array of random integers, move all the zeros in the array to the end of the array. Try to keep this in *O(n)* time (or better)!
+
 Source : [@casidoo](https://twitter.com/cassidoo)'s [newsletter](https://twitter.com/cassidoo).
 
 ### Solution
-You cannot implement a solution better than *O(n)* because you need to peek at all elements atleast once. And since this is not guaranteed to be a sorted array, *binary searching* is not an option. The only optimisatino that I can think of is,
-- whenever you find a zero, remove it and add it to the tail end of the array.
+A solution better than *O(n)* cannot be found, because you need to peek at all elements atleast once. Since this is not guaranteed to be a sorted array, *binary searching* is not an option. The only optimisation that I can think of is,
+- Whenever you find a zero, remove it and add it to the tail end of the array.
 - Update the number of zeroes encountered, so that you can reduce the count from the total number of iterations needed.
 
-This optimisation, however, will not be very useful array has all the zeroes at the beginning, because you keep modifying the array everytime you see a *0*. So better optimisation on top of this would be to :
+This optimisation, however, will not be very useful if the supplied array has all the zeroes at the beginning. You keep modifying the array everytime you see a *0*, and continue with the next zero. So a better optimisation on top of this would be to :
 - when you find a zero, store the point of encounter, and proceed till you find a non-zero element.
-- splice array from start to current point removing all the intermediate zeroes.
+- splice array from start encounter point to before the current point removing all the intermediate zeroes.
 - concat final array with the number of zeroes that were encountered/removed.
 
 ```js
