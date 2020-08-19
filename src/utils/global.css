@@ -1,5 +1,10 @@
-body {
+:root{
   --bg: #F7FAFC;
+  --twitter-color: #1DA1F2;
+  --fb-color: #4267B2;
+}
+body {
+
   background-color: var(--bg);
 }
 
@@ -90,4 +95,51 @@ ul.pagination a.page-link {
   box-shadow: 0 0 10px #666;
   margin: 2rem -2rem 1.5rem;
   transform: scale(1.02);
+}
+
+.share-button{
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 3px;
+  display: inline-flex;
+  font-size: 0.85rem;
+  font-family: -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  margin: 0 0.5rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-out;
+}
+
+.share-button:first-child{
+  margin-left: 0;
+}
+
+.share-button svg{
+  width: 24px;
+  height: 24px;
+  margin-right: 0.3rem;
+}
+
+.twitter-share-button{
+  border-color: var(--twitter-color);
+  color: var(--twitter-color);
+}
+
+.twitter-share-button:hover{
+  background-color: var(--twitter-color);
+  color: var(--bg);
+}
+
+.fb-share-button{
+  border-color: var(--fb-color);
+  color: var(--fb-color);
+}
+
+.fb-share-button:hover{
+  background-color: var(--fb-color);
+  color: var(--bg);
+}
+
+article iframe{
+  box-shadow: 0 0 10px #ccc
 }

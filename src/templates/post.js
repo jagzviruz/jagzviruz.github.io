@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import parseISO from "date-fns/parseISO"
 import format from "date-fns/format"
+import { RiTwitterLine, RiFacebookBoxLine } from "react-icons/ri"
 
 import { BaseLayout } from "../layout"
 import SEO from "../components/seo"
@@ -10,7 +11,8 @@ import SEO from "../components/seo"
 import "katex/dist/katex.min.css"
 import postStyles from "./post.module.scss"
 
-export default ({ data, pageContext }) => {
+export default ({ data, pageContext, location }) => {
+  const {social} = data.site.siteMetadata;
   const post = data.markdownRemark
   const { title, tags = [], spoiler, date, keywords = [] } = post.frontmatter
   const { previous, next } = pageContext
@@ -41,20 +43,23 @@ export default ({ data, pageContext }) => {
         </p>
         <div class="share-widgets">
           <a
-            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-            class="twitter-share-button"
-            data-text={`Found this nifty post :${title}`}
-            data-via="jagzviruz"
-            data-lang="en"
-            data-show-count="false"
+            href={`//twitter.com/intent/tweet?original_referer=${location.href}&ref_src=twsrc%5Etfw&text=Found this post : "${title}" by ${social.twitterHandle}&tw_p=tweetbutton&url=${location.href}`}
+            className="share-button twitter-share-button"
+            target="_blank"
+            rel="noreferrer"
           >
+            <RiTwitterLine/>
             Tweet
           </a>
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
+          <a
+            href={`//www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${location.href}&display=popup&ref=plugin&src=share_button`}
+            className="share-button fb-share-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiFacebookBoxLine/>
+            Share
+          </a>
         </div>
       </footer>
       <footer>
@@ -119,6 +124,13 @@ export const query = graphql`
         tags
         spoiler
         keywords
+      }
+    }
+    site {
+      siteMetadata {
+        social {
+          twitterHandle
+        }
       }
     }
   }
