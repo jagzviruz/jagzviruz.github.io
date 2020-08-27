@@ -54,20 +54,20 @@ const MaxMinStack = function(){
     if(item == MAX){
       dequeue.pop();
       MAX = dequeue[dequeue.length - 1];
-    }
-
-    if(item == MIN){
+    } else if(item == MIN){
       dequeue.shift();
       MIN = dequeue[0];
     }
+
     size--;
+
     return item;
   }
 
   const top = () => itemStack[size - 1];
 
-  const getMin = () => size ? MIN : 'Stack is empty';
-  const getMax = () => size ? MAX : 'Stack is empty';
+  const getMin = () => size ? dequeue[0] : 'Stack is empty';
+  const getMax = () => size ? dequeue[size - 1] : 'Stack is empty';
 
   return {
     push,
