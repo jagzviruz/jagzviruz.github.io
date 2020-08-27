@@ -1,5 +1,5 @@
 ---
-title: Implement a MaxMin Stack
+title: Implement a Max/Min Stack
 slug: /max-min-stack
 date: '2020-08-26T21:56'
 spoiler: Implement a stack data structure such that the maximum and minimum elements can be retrieved in *O(1)* time.
@@ -49,6 +49,7 @@ const MaxMinStack = function(){
   }
 
   const pop = () => {
+    if(!size) return;
     const item = itemStack.pop();
 
     if(item == MAX){
