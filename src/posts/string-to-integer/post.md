@@ -121,3 +121,5 @@ var myAtoi = function(str) {
     return integerValue;
 };
 ```
+
+<iframe height="1000px" width="100%" src="https://repl.it/@jagzviruz/String-to-integer?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
