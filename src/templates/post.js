@@ -43,7 +43,7 @@ export default ({ data, pageContext, location }) => {
         </p>
         <div class="share-widgets">
           <a
-            href={`//twitter.com/intent/tweet?original_referer=${location.href}&ref_src=twsrc%5Etfw&text=Found this post : "${title}" by ${social.twitterHandle}&tw_p=tweetbutton&url=${location.href}`}
+            href={`//twitter.com/intent/tweet?original_referer=${data.site.siteMetadata.siteUrl + location.pathname}&ref_src=twsrc%5Etfw&text=Found this post : "${title}" by ${social.twitterHandle}&tw_p=tweetbutton&url=${data.site.siteMetadata.siteUrl + location.pathname}`}
             className="share-button twitter-share-button"
             target="_blank"
             rel="noreferrer"
@@ -52,7 +52,7 @@ export default ({ data, pageContext, location }) => {
             Tweet
           </a>
           <a
-            href={`//www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${location.href}&display=popup&ref=plugin&src=share_button`}
+            href={`//www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${data.site.siteMetadata.siteUrl + location.pathname}&display=popup&ref=plugin&src=share_button`}
             className="share-button fb-share-button"
             target="_blank"
             rel="noreferrer"
@@ -128,6 +128,7 @@ export const query = graphql`
     }
     site {
       siteMetadata {
+        siteUrl
         social {
           twitterHandle
         }
