@@ -12,7 +12,7 @@ import "katex/dist/katex.min.css"
 import postStyles from "./post.module.scss"
 
 export default ({ data, pageContext, location }) => {
-  const {social} = data.site.siteMetadata;
+  const { social } = data.site.siteMetadata
   const post = data.markdownRemark
   const { title, tags = [], spoiler, date, keywords = [] } = post.frontmatter
   const { previous, next } = pageContext
@@ -24,13 +24,40 @@ export default ({ data, pageContext, location }) => {
         description={spoiler}
         keywords={keywords && keywords.filter(a => a.trim())}
       />
-      <aside>
+      <div className={postStyles.articleHeading}>
+
+        <h1>{title}</h1>
+        <span className="header-share-widgets">
+          <a
+            href={`//twitter.com/intent/tweet?original_referer=${
+              data.site.siteMetadata.siteUrl + location.pathname
+            }&ref_src=twsrc%5Etfw&text=Found this post : "${title}" by ${
+              social.twitterHandle
+            }&tw_p=tweetbutton&url=${
+              data.site.siteMetadata.siteUrl + location.pathname
+            }`}
+            className="share-button twitter-share-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiTwitterLine />
+          </a>
+          <a
+            href={`//www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${
+              data.site.siteMetadata.siteUrl + location.pathname
+            }&display=popup&ref=plugin&src=share_button`}
+            className="share-button fb-share-button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <RiFacebookBoxLine />
+          </a>
+        </span>
         <span className={postStyles.timeBlock}>
           Published on{" "}
           <time dateTime={date}>{format(parseISO(date), "MMMM dd, yyyy")}</time>
         </span>
-      </aside>
-      <h1>{title}</h1>
+      </div>
 
       <article
         className={postStyles.article}
@@ -41,23 +68,31 @@ export default ({ data, pageContext, location }) => {
           If you think somebody would benefit from reading this post, please
           share away and help me reach more people.
         </p>
-        <div class="share-widgets">
+        <div className="share-widgets">
           <a
-            href={`//twitter.com/intent/tweet?original_referer=${data.site.siteMetadata.siteUrl + location.pathname}&ref_src=twsrc%5Etfw&text=Found this post : "${title}" by ${social.twitterHandle}&tw_p=tweetbutton&url=${data.site.siteMetadata.siteUrl + location.pathname}`}
+            href={`//twitter.com/intent/tweet?original_referer=${
+              data.site.siteMetadata.siteUrl + location.pathname
+            }&ref_src=twsrc%5Etfw&text=Found this post : "${title}" by ${
+              social.twitterHandle
+            }&tw_p=tweetbutton&url=${
+              data.site.siteMetadata.siteUrl + location.pathname
+            }`}
             className="share-button twitter-share-button"
             target="_blank"
             rel="noreferrer"
           >
-            <RiTwitterLine/>
+            <RiTwitterLine />
             Tweet
           </a>
           <a
-            href={`//www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${data.site.siteMetadata.siteUrl + location.pathname}&display=popup&ref=plugin&src=share_button`}
+            href={`//www.facebook.com/sharer/sharer.php?kid_directed_site=0&sdk=joey&u=${
+              data.site.siteMetadata.siteUrl + location.pathname
+            }&display=popup&ref=plugin&src=share_button`}
             className="share-button fb-share-button"
             target="_blank"
             rel="noreferrer"
           >
-            <RiFacebookBoxLine/>
+            <RiFacebookBoxLine />
             Share
           </a>
         </div>
