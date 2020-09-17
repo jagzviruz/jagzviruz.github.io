@@ -21,6 +21,7 @@ In my recent days of practising competitive coding, I came across these **Count 
 Given a 2d matrix of color codes, a *click* point and a replacement color code, write a function such that it returns the modified array with all contiguous regions from the *click* point are replaced with the replacement color. For the sake of brevity, lets assume color codes are represented by an integer instead of the traditional hex-code.
 A *contiguous* region is defined as when adjacent horizontal or vertical cells have the same color code.
 The following example should illustrate this better.
+
 *Example*
 ```md
 **Input**:
