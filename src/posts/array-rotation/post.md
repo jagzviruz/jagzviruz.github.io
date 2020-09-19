@@ -1,7 +1,7 @@
 ---
 title: Rotating an Array
 slug: /rotate-array
-date: '2020-09-17T13:39'
+date: '2020-09-18T13:39'
 spoiler: Given an array, rotate its elements by the given number of steps.
 tags: [programming basics, array shifting, rotation]
 keywords: [coding, array, basics, shifting elements]
@@ -88,6 +88,70 @@ function rotate(arr, steps=0){
   }
 }
 ```
-Although this approach eliminates the need of repeatedly pushing and popping elements, it can be firther optimised by eliminating the need for changing the size of the array.
+Although this approach eliminates the need of repeatedly pushing and popping elements, it can be further optimised by eliminating the need for changing the size of the array and implementing the Juggling algorithm.
 
 <iframe height="600px" width="100%" src="https://repl.it/@jagzviruz/Rotate-Array?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+## Juggling Algorithm
+In this method, in order to rotate an array of length *n* by *k* steps, divide it into *h* sets, where *h = gcd(n, k)*, and then rotate the elements in each set. GCD or HCF is
+the greatest number that can divide both *n* and *k* such that ` n % h == 0 ` and ` k % h == 0 `.
+
+![Juggling alogorithm to rotate left](./juggle.png)
+
+```js
+const GCD = (a, b) => {
+  let [smaller, greater] = Math.abs(a) > Math.abs(b) ? [a, b] : [b > a];
+
+  while (  smaller != 0 ){
+    let tmp = smaller;
+
+    smaller = greater % smaller;
+    greater = tmp;
+  }
+
+  return greater;
+};
+
+function rotateLeft(arr, steps){
+  const len = arr.length;
+  const gcd = GCD(arr.length, steps);
+  let i, j, temp ;
+
+  for(i = 0; i < gcd; i++){
+    let swapWith;
+    j = i;
+    temp = arr[j];
+
+    while(true){
+      swapWith = j + steps;
+      if(swapWith >= len){
+        swapWith = swapWith - len;
+      }
+
+      if (swapWith == i){
+        break;
+      }
+
+      arr[j] = arr[swapWith];
+      j = swapWith;
+    }
+
+    arr[j] = temp;
+  }
+}
+
+function rotate(arr, steps = 1){
+  const len = arr.length;
+
+  if(Math.abs(steps) > len){
+    steps = steps % len;
+  }
+
+  if(steps < 0){
+    rotateLeft(arr, -steps);
+  } else {
+    rotateLeft(arr, len - steps);
+  }
+}
+```
+<iframe height="900px" width="100%" src="https://repl.it/@jagzviruz/Array-Rotate-Juggling?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
