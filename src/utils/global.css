@@ -143,3 +143,9 @@ ul.pagination a.page-link {
 article iframe{
   box-shadow: 0 0 10px #ccc
 }
+
+:not(pre)>code[class*=language-]{
+  padding: 0.1em 0.5em;
+  margin: 0 0.15em;
+  white-space: pre;
+}
