@@ -34,9 +34,10 @@ Sorting the numbers in descending order would have worked if all digits in the g
 
 Upon sorting : [9, 8, 5, 3, 2] => 98532
 
-However as seen in Example 1 above, [10, 2] would have given "102" however the largest possible number is "210"
+However as seen in Example 1 above, [10, 2] would have given "102"
+however the largest possible number is "210"
 ```
-We use JS is inbuilt ability to lexicographical comparision of numeric string to identify the larger number.
+We use Javascript's inbuilt ability to perform lexicographic comparision of numeric strings.
 
 ## Solution
 ```js
