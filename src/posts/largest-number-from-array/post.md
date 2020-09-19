@@ -55,10 +55,6 @@ var largestNumber = function(nums) {
         a = a.toString();
         b = b.toString();
 
-        if(a != 0 || b != 0){
-            onlyZeroes = false;
-        }
-
         if (a == b){
             return 0;
         }
