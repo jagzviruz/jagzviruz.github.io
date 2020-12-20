@@ -1,7 +1,7 @@
 ---
 title: Longest palindromic string
 slug: /longest-palindromic-string
-date: '2020-02-12T10:30'
+date: '2020-12-20T10:30'
 spoiler: Find the longest substring that is also a palindrome.
 tags: [leetcode, javascript, longest palindrome substring, dynamic programming, ]
 keywords: [leetcode, javascript, longest palindrom substring, dynamic programming, interview questions]
