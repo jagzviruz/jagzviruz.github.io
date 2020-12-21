@@ -42,12 +42,10 @@ Output: "a"
 * Complexity based hint: If we use brute-force and check whether for every start and end position a substring is a palindrome we have `O(n^2)` start - end pairs and `O(n)` palindromic checks. Can we reduce the time for palindromic checks to `O(1)` by reusing some previous computation ?
 ### Solution
 ```js
-
 /**
   * @param {string} s
   * @return {string}
   */
-
 var longestPalindrome = function(s) {
   const len = s.length;
   const dp = [];
@@ -76,6 +74,7 @@ var longestPalindrome = function(s) {
   }
   let substrLength = 3;
 
+
   while (substrLength <= len) {
     i = 0;
 
@@ -97,7 +96,5 @@ var longestPalindrome = function(s) {
 
   return s.substr(substrStart, maxLength)
 };
-
-console.log(longestPalindrome("baxanaxayb"))
-
 ```
+<iframe height="1000px" width="100%" src="https://repl.it/@jagzviruz/Longest-palindromic-string#index.js?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
