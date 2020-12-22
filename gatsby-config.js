@@ -12,7 +12,7 @@ const {
   github,
   linkedin,
   email,
-  googleAnalyticsTrackingId
+  googleAnalyticsTrackingId,
 } = require("./config/metadata")
 
 const domain = psl.parse(siteUrl).domain
@@ -24,7 +24,7 @@ module.exports = {
     author: {
       name,
       minibio,
-      headshot
+      headshot,
     },
     siteUrl,
     canonicalUrl: siteUrl,
@@ -33,17 +33,19 @@ module.exports = {
       twitterHandle,
       github,
       linkedin,
-      email
+      email,
     },
+  },
+  flags: {
+    QUERY_ON_DEMAND: false,
+    LAZY_IMAGES: false,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          googleAnalyticsTrackingId
-        ],
+        trackingIds: [googleAnalyticsTrackingId],
         // This object is used for configuration specific to this plugin
         pluginConfig: {
           // Puts tracking script in the head instead of the body
@@ -75,9 +77,7 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     {
       resolve: "gatsby-plugin-transition-link",
-      options: {
-
-      },
+      options: {},
     },
     {
       resolve: `gatsby-plugin-typography`,
