@@ -1,7 +1,7 @@
-:root{
-  --bg: #F7FAFC;
-  --twitter-color: #1DA1F2;
-  --fb-color: #4267B2;
+:root {
+  --bg: #fff;
+  --twitter-color: #1da1f2;
+  --fb-color: #4267b2;
 }
 body {
   background-color: var(--bg);
@@ -53,7 +53,6 @@ ul.pagination .next {
 
 ul.pagination a.page-link {
   color: #6c757d;
-
 }
 
 .pill {
@@ -65,86 +64,86 @@ ul.pagination a.page-link {
   text-transform: uppercase;
   border-radius: 5px;
   margin: 0 0.25rem;
-  background-color: rgba(195,218,254,0.5);
+  background-color: rgba(195, 218, 254, 0.5);
   font-size: 0.65rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.pill:first-child{
+.pill:first-child {
   margin-left: 0;
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
 
-.my-3{
+.my-3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-
-.gatsby-resp-image-wrapper{
+.gatsby-resp-image-wrapper {
   border: 15px solid #fff;
   border-radius: 3px;
   box-shadow: 0 0px 10px #eee;
   transform: rotate(-0.65deg);
 }
 
-.gatsby-highlight{
+.gatsby-highlight {
   box-shadow: 0 0 10px #666;
   margin: 2rem 0em 1.5rem;
   transform: scale(1.02);
 }
 
-.share-button{
+.share-button {
   border-style: solid;
   border-radius: 5px;
   border-width: 3px;
   display: inline-flex;
   font-size: 0.85rem;
-  font-family: -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  font-family: -apple-system, "Helvetica Neue", BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
   margin: 0 0.5rem;
   padding: 0.25rem 0.5rem;
   text-transform: uppercase;
   transition: all 0.2s ease-out;
 }
 
-.share-button:first-child{
+.share-button:first-child {
   margin-left: 0;
 }
 
-.share-button svg{
+.share-button svg {
   width: 24px;
   height: 24px;
   margin-right: 0.3rem;
 }
 
-.twitter-share-button{
+.twitter-share-button {
   border-color: var(--twitter-color);
   color: var(--twitter-color);
 }
 
-.twitter-share-button:hover{
+.twitter-share-button:hover {
   background-color: var(--twitter-color);
   color: var(--bg);
 }
 
-.fb-share-button{
+.fb-share-button {
   border-color: var(--fb-color);
   color: var(--fb-color);
 }
 
-.fb-share-button:hover{
+.fb-share-button:hover {
   background-color: var(--fb-color);
   color: var(--bg);
 }
 
-article iframe{
-  box-shadow: 0 0 10px #ccc
+article iframe {
+  box-shadow: 0 0 10px #ccc;
 }
 
-:not(pre)>code[class*=language-]{
+:not(pre) > code[class*="language-"] {
   padding: 0.1em 0.5em;
   margin: 0 0.15em;
   white-space: pre;

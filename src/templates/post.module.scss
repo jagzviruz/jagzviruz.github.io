@@ -1,45 +1,45 @@
 @import "~prismjs/themes/prism-okaidia.css";
 @import "~prismjs/plugins/line-numbers/prism-line-numbers";
 
-.article-heading{
+.article-heading {
   background-color: var(--article-bg);
   border-bottom: 1px solid #ccc;
   color: #222;
-  margin: 1rem -4rem ;
+  margin: 1rem -4rem;
   padding: 1rem 4rem 1rem;
   display: flex;
   align-items: center;
   position: relative;
 
-  h1{
+  h1 {
     flex-grow: 1;
     font-weight: 700;
   }
-  span{
-    a{
+  span {
+    a {
       margin-right: 0;
       font-size: small;
       padding: 0.1rem;
       text-align: center;
 
-      svg{
+      svg {
         margin-right: 0;
       }
     }
   }
 }
 
-.article{
+.article {
   background-color: var(--article-bg);
   padding: 1em 4em;
   margin: -1em -4em 1em;
-  box-shadow: 0 0 5px #f0f0f0;
+  box-shadow: 0 0 5px var(--shadows);
 }
 
-.time-block{
+.time-block {
   opacity: 0.5;
-  font-family: 'Montserrat';
-  font-size:0.85rem;
+  font-family: "Montserrat";
+  font-size: 0.85rem;
   position: absolute;
   right: 4rem;
   bottom: 0.35rem;
