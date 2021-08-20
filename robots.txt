@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jagadishk.dev/sitemap.xml
+Host: https://jagadishk.dev

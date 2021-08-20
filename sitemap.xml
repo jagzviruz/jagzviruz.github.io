@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://jagadishk.dev/docker-linux-mint</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/longest-palindromic-string</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/largest-number-from-array</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/rotate-array</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/robot-running-in-circle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/bucket-color-fill</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/word-pattern</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/squares-of-sorted-array</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/string-to-integer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/longest-substring-without-repeating-characters</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/max-min-stack</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/move-zeroes</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/first-last-positions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/minimum-time-visiting-all-points</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/lru-cache</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/shortest-way-to-form-string</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/sorting/selection-sort</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/sorting/bubblesort</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/sorting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/find-all-anagrams-of-string-in-another</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/median-of-two-sorted-arrays</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/hello-world</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jagadishk.dev/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
