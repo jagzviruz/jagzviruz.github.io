@@ -34,7 +34,6 @@
     "gsap": "^3.5.1",
     "katex": "^0.12.0",
     "md5": "^2.3.0",
-    "node-sass": "^4.14.1",
     "prismjs": "^1.22.0",
     "prop-types": "^15.7.2",
     "psl": "^1.8.0",
@@ -43,7 +42,7 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.1.0",
     "react-typography": "^0.16.19",
-    "sass": "^1.30.0",
+    "sass": "^1.38.0",
     "typography": "^0.16.19",
     "typography-theme-funston": "^0.16.19",
     "typography-theme-stern-grove": "^0.16.19"
