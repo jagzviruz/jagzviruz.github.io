@@ -15,13 +15,12 @@ jobs:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
-      - uses: borales/actions-yarn@v2.3.0
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
-          cmd: install # will run `yarn install` command
-
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build # will run `yarn build` command
+          node-version: "16"
+      - run: npm install -g yarn
+      - run: yarn install
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
