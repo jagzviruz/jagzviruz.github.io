@@ -1,7 +1,7 @@
 ---
 title: Install Docker on Linux Mint
 slug: /docker-linux-mint
-date: "2021-08-20T08:02"
+date: "2021-08-19T08:02"
 spoiler: Steps to install Docker on Linux Mint
 tags: ["developer", "docker", "setup", "linux mint"]
 keywords: ["developer", "docker", "setup", "linux", "debian"]
