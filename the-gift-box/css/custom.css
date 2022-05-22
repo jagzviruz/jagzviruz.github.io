@@ -2347,7 +2347,7 @@ body {
   background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
   background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
   background-color: var(--r-background-color);
-  padding: 10px 15px;
+  padding: 2rem;
 }
 
 .reveal {
