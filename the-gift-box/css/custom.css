@@ -2474,9 +2474,14 @@ body {
   display: block;
 }
 h5.title{
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .reveal .slides > section > section.anim{
   display: block;
+}
+
+.reveal img{
+  margin: 0;
 }
