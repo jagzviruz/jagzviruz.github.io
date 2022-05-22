@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/the-gift-box/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Yasss</title>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="shown" id="slide-1">
+          <img src="assets/bahut-tez.gif" alt="" />
+          <img src="assets/andar.webp" alt="" />
+        </section>
+        <section id="slide-2">
+          <section class="anim">
+            <img src="assets/2.jpg" alt="" />
+          </section>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(startTimer);
+      $('#slide-2').hide();
+      function startTimer() {
+        setTimeout(() => {
+          $('#slide-1').toggleClass('shown');
+
+          $('#slide-2')
+            .fadeIn(4000)
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

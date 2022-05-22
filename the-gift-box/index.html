@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <base href="/the-gift-box/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Yasss</title>
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="shown" id="slide-1">
+          <h2>Yaaaay !!!!</h2>
+          <img src="assets/yasss.webp" alt="" />
+          <p>You decoded the secret of the box!</p>
+        </section>
+        <section id="slide-2">
+          <section class="anim">
+            <img src="assets/birthday-friends.gif" alt="" />
+            <img src="assets/office.gif" alt="" />
+          </section>
+          
+        </section>
+        <section id="slide-3">
+          <section class="anim">
+            <h5 class="title">Can I take this day away from you ?</h5>
+            <img src="assets/1.jpg" alt="" />
+          </section>
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(startTimer);
+      function startTimer() {
+        $('#slide-3, #slide-2').hide();
+        setTimeout(() => {
+          $('#slide-1').toggleClass('shown');
+
+          $('#slide-2')
+            .fadeIn(4000)
+            .delay(1000)
+            .fadeOut(showTkt);
+            
+        }, 5000);
+        function showTkt(){
+          $('#slide-3')
+            .fadeIn(4000)
+        }
+      }
+    </script>
+  </body>
+</html>
